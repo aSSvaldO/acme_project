@@ -20,5 +20,5 @@ class Birthday(models.Model):
         )
 
     def get_absolute_url(self):
-            # С помощью функции reverse() возвращаем URL объекта.
+        # С помощью функции reverse() возвращаем URL объекта.
         return reverse('birthday:detail', kwargs={'pk': self.pk})
